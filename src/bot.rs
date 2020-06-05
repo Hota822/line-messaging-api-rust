@@ -7,9 +7,9 @@ use serde_json::Value;
 use std::io::Read;
 use std::collections::HashMap;
 
-use models::LineBotConfig;
-use messages::LineMessage;
-use sources::{ LineSource, LineSourceType };
+use crate::models::LineBotConfig;
+use crate::messages::LineMessage;
+use crate::sources::{ LineSource, LineSourceType };
 
 static BASE_URL: &'static str = "https://api.line.me/v2/bot";
 

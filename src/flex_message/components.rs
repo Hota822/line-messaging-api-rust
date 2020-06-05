@@ -1,4 +1,4 @@
-use actions::Action;
+use crate::actions::Action;
 
 #[derive(Serialize, Deserialize, Clone)]
 #[serde(tag = "type", rename_all = "camelCase")]

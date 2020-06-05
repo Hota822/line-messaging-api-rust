@@ -1,6 +1,6 @@
-use actions::ImagemapAction;
-use templates::TemplateComponent;
-use flex_message::containers::FlexContainer;
+use crate::actions::ImagemapAction;
+use crate::templates::TemplateComponent;
+use crate::flex_message::containers::FlexContainer;
 
 #[derive(Serialize, Deserialize, Clone)]
 #[serde(rename_all = "camelCase")]

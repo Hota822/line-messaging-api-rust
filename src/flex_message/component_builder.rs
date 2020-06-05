@@ -1,5 +1,5 @@
-use flex_message::components::Component;
-use actions::Action;
+use crate::flex_message::components::Component;
+use crate::actions::Action;
 
 pub struct ComponentBuilder {
     align           : String,

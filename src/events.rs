@@ -1,8 +1,8 @@
 use serde_json::Value;
 
-use bot::LineBot;
-use sources::LineSource;
-use messages::LineMessage;
+use crate::bot::LineBot;
+use crate::sources::LineSource;
+use crate::messages::LineMessage;
 
 #[derive(Serialize, Deserialize, Clone)]
 #[serde(tag = "type", rename_all = "camelCase")]

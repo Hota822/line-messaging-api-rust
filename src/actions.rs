@@ -1,4 +1,4 @@
-use models::Rectangle;
+use crate::models::Rectangle;
 
 #[derive(Serialize, Deserialize, Clone)]
 #[serde(tag = "type", rename_all = "camelCase")]

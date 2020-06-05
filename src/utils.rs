@@ -3,7 +3,7 @@ use serde_json;
 use serde_json::Error;
 use serde_json::value::Value;
 
-use events::{ ReplyableEvent };
+use crate::events::{ ReplyableEvent };
 
 pub fn is_replyable(data: &str) -> bool {
     let events: Value = match serde_json::from_str(data) {

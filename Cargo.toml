@@ -1,18 +1,22 @@
 [package]
-name = "line-messaging-api-rust"
-version = "0.1.1"
-authors = ["uma <blog3170@gmail.com>"]
+name = "line"
+version = "0.1.2"
+authors = ["hota <hota822@gmail.com>"]
+edition = "2018"
 
 license = "MIT"
 description = "LINE Messaging API Wrapper in Rust"
-repository = "https://github.com/uma0317/line-messaging-api-rust"
+repository = "https://github.com/hota822/line-messaging-api-rust"
+#  forked form = "https://github.com/uma0317/line-messaging-api-rust"
 
 [dependencies]
-reqwest = "0.8.6"
+# line-messaging-api-rust = { path = "../line-messaging-api-rust" }
+# line-messaging-api-rust = { git = "https://github.com/hota822/line-messaging-api-rust" }
+reqwest = "0.10"
 serde = "1.0"
 serde_derive = "1.0"
 serde_json = "1.0"
-bytes = "0.4"
-base64 = "0.9.2"
-hmac = "0.6.2"
-sha2 = "0.7.1"
+bytes = "0.5"
+base64 = "0.12.1"
+hmac = "0.7.1"
+sha2 = "0.8.2"
