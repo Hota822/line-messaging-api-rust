@@ -1,4 +1,3 @@
-extern crate line_messaging_api_rust as line;
 extern crate serde_json;
 
 use line::flex_message::styles::{ Style, BlockStyle, BubbleStyle };
@@ -8,7 +7,7 @@ use line::flex_message::containers::FlexContainer;
 use line::messages::LineMessage;
 use line::actions::{ ImagemapAction, Action };
 use line::templates::{ TemplateComponent, TemplateColumn, ImageColumn };
-use common;
+use crate::common;
 
 #[test]
 #[ignore]

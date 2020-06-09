@@ -1,13 +1,14 @@
-extern crate line_messaging_api_rust as line;
+
 extern crate serde_json;
 
 use serde_json::value::Value;
 
+// use line_messaging_api_rust as line;
 use line::events::ReplyableEvent;
 use line::utils;
 use line::bot::LineBot;
 
-use common;
+use crate::common;
 
 #[test]
 fn to_replyable_test() {   

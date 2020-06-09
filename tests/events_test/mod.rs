@@ -1,9 +1,8 @@
-extern crate line_messaging_api_rust as line;
-
+extern crate line;
 use line::events::{ LineEvent, ReplyableEvent };
 use line::utils;
 
-use common;
+use crate::common;
 
 #[test]
 fn text_message_test() {  

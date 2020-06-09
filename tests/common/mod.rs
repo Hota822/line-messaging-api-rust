@@ -1,10 +1,9 @@
 extern crate serde_json;
-extern crate line;
 
 use crate::common::serde_json::value::Value;
 
-use bot::LineBot;
-use messages::LineMessage;
+use line::bot::LineBot;
+use line::messages::LineMessage;
 
 use std::fs::File;
 use std::io::prelude::*;

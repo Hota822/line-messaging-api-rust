@@ -1,5 +1,5 @@
 use reqwest::Client;
-use reqwest::header::{ Authorization, Bearer };
+// use reqwest::header::{ Authorization, Bearer };
 use reqwest::Response; 
 
 use serde_json::Value;
@@ -119,15 +119,20 @@ impl LineBot {
     pub fn post(&self, endpoint: &str, data: Value, options: Value) -> Response{
         let url = format!("{}{}", BASE_URL, endpoint);
 
+        // let mut response = self.client.post(&url)
+        //     .header(
+        //         Authorization(
+        //             Bearer {
+        //                 token: self.config.get_channel_token()
+        //             }
+        //         )
+        //     )
+        //     .json(&data)
+        //     .send()
+        //     .expect(&format!("Failed to post to {}", endpoint));
+
         let mut response = self.client.post(&url)
-            .header(
-                Authorization(
-                    Bearer {
-                        token: self.config.get_channel_token()
-                    }
-                )
-            )
-            .json(&data)
+            .bearer_auth(self.config.get_channel_token())
             .send()
             .expect(&format!("Failed to post to {}", endpoint));
 
