@@ -1,5 +1,6 @@
 /target
 **/*.rs.bk
+/rls*
 
 test.rb
 /tests/common/config.json

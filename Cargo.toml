@@ -1,5 +1,5 @@
 [package]
-name = "line"
+name = "line-messaging-api-rust"
 version = "0.1.2"
 authors = ["hota <hota822@gmail.com>"]
 edition = "2018"
