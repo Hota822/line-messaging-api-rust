@@ -133,6 +133,7 @@ impl LineBot {
 
         let mut response = self.client.post(&url)
             .bearer_auth(self.config.get_channel_token())
+            .json(&data)
             .send()
             .expect(&format!("Failed to post to {}", endpoint));
 
