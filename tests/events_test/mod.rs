@@ -1,4 +1,4 @@
-extern crate line;
+extern crate line_messaging_api_rust;
 use line::events::{ LineEvent, ReplyableEvent };
 use line::utils;
 

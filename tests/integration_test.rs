@@ -1,7 +1,7 @@
 
 
 extern crate serde_json;
-extern crate line;
+extern crate line_messaging_api_rust as line;
 
 use line::bot::LineBot;
 use line::models::LineBotConfig;
