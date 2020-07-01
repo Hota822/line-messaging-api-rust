@@ -64,6 +64,15 @@ impl LineBot {
         self.post("/message/push", data, json!({}));
     }
 
+    pub fn multicast_messages(&self, to: Vec<&'static str>, msg: Vec<LineMessage>) {
+        let data = json!({
+            "to": to,
+            "messages": msg
+        });
+
+        self.post("/message/multicast", data, json!({}));
+    }
+
     pub fn get_content_from_message(&self, message: LineMessage) {
         self.get_content(message.get_id())
     }
